@@ -15,4 +15,11 @@ make queflow
     * make orderQue send user input to customer.orders +
     * make orderQue send user input to make address object and send object to order object
     * make initialQue get user input and make a new billingInfo object and send that object to     the customer
-    
+
+
+  Display On the Screen
+
+    * there is a div and certian functions fill it with forms that return values+
+    * display all order divs
+
+# NOTE: still at this at submission

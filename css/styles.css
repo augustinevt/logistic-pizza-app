@@ -1,0 +1,55 @@
+#output {
+  border:solid;
+  margin:auto;
+  width: 30vw;
+  height: 27vw;
+}
+
+.order {
+  width: 20vw;
+  height: 20vw;
+  border: solid;
+  border-radius: 50%
+}
+
+#cloud {
+  position:absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192,192,192,0.3);
+}
+
+#pizzaForm {
+  position:absolute;
+  top: 10%;
+  left: 30%;
+  width: 40vw;
+  height: 40vw;
+  border: solid;
+  background-color: white;
+}
+
+.order {
+  width: 60vw;
+  height: 30vw;
+  border: solid;
+  border-radius: 20px;
+}
+
+.orderPizzas {
+  border: solid;
+  width: 60%;
+
+  border: solid;
+  border-radius: 20px;
+}
+
+.pizzaIcon {
+  border: solid;
+  width: 10vw;
+  height: 10vw;
+  border: solid;
+  border-radius: 50%;
+  display: inline-block;
+}

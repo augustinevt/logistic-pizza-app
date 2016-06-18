@@ -1,6 +1,6 @@
 //
 //
-//BLALALLALALALAAL
+// BLALALLALALALAAL
 // ////////
 //
 // function getAddress() {
@@ -9,42 +9,30 @@
 // }
 //
 // function pizzaQue(currentOrder) {
-//   alert("this is the start of PizzaQue");
+//
+//
 //   var pizzaInfo = {};
 //   var toppings = [];
-//   var size = prompt('what size would you like it?');
-//   pizzaInfo['size'] = size;
-//   while(true){
-//     var topping = prompt('what to you want on it?');
+//   #set html
+//
+//   $('#add').click(function() {
+//     var topping = $('input').val();
 //     toppings.push(topping);
-//     if(topping === ''){
-//       pizzaInfo['toppings'] = toppings;
-//       var newPizza = new Pizza(pizzaInfo);
-//       currentOrder.pizzas.push(newPizza);
-//       break;
-//     }
-//   }
-//   alert("push Pizza!");
-//   var addPizza = prompt('add a pizza?');
-//   if(addPizza === "yes") {
-//     pizzaQue(currentOrder);
-//   }else{
-//     return;
-//   }
+//     $('list').append("<li>" + topping + "</li>")
+//   });
+//
+//   $('#done').click(function() {
+//     var size = $('input:radio:checked').val();
+//     pizzaInfo['size'] = size;
+//     pizzaInfo['toppings'] = toppings;
+//     var newPizza = new Pizza(pizzaInfo);
+//     currentOrder.pizzas.push(newPizza);
+//   });
 // }
 //
 // function orderQue() {
-//   alert("this is the start of orderQue");
 //   currentOrder = currentCustomer.newOrder();
 //   pizzaQue(currentOrder);
-//   currentOrder.address = getAddress();
-//   currentCustomer.orders.push(currentOrder);
-//   var addOrder = prompt('add an order?');
-//   if (addOrder === 'yes') {
-//     orderQue();
-//   }else{
-//     return;
-//   }
 // }
 //
 // function getBilling() {
@@ -57,6 +45,6 @@
 // $(function() {
 //   var name = prompt("hello! What's your name?");
 //   currentCustomer = new Customer(name);
-//   orderQue(currentCustomer);
+//
 //   currentCustomer.billing = getBilling();
 // });
