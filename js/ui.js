@@ -6,13 +6,7 @@ function domify() {
     $('body').append('<div class="order" id="order'+ order.id + '"></div>');
     $('#order' + order.id).append('<h3>'+order.id+'</h3>');
     $('#order' + order.id).append('<h2 class="size">hello</h2>');
-    $('#order' + order.id).append('<button type="button" id="order-'+order.id+'"></button>');
-
-    // order.pizzas = [1,2,3,4]
-
-    // for (var i = 0; i < order.pizzas.length; i++) {
-    // $('#order' + order.id).append('<div class="pizzaIcon"></div>')
-    // }
+    $('#order' + order.id).append('<button class="newPizza" type="button" id="order-'+order.id+'">New Pizza</button>');
 
      order.pizzas.forEach(function(pizza) {
        var toppings = '';
@@ -51,18 +45,14 @@ function domify() {
 
 
 $(function(){
-
+  var id = 0;
   // var name = prompt("hello! What's your name?");
   currentCustomer = new Customer("fred");
 
-  for (var i = 0; i < 4; i++) {
-    currentCustomer.orders.push(new Order(currentCustomer, i));
-  }
-
-  domify();
-
-
-
-
+  $('#newOrder').click(function() {
+    currentCustomer.orders.push(new Order(currentCustomer, id));
+    id++;
+    domify();
+  });
 
 });

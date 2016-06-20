@@ -23,3 +23,8 @@ make queflow
     * display all order divs
 
 # NOTE: still at this at submission
+
+TODO:
+  make interface sketch
+  make address form // yay this is top level!!!
+  make billing form // yay this is top level!!!

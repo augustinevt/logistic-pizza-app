@@ -27,20 +27,21 @@
   height: 40vw;
   border: solid;
   background-color: white;
+  z-index: 3;
 }
 
 .order {
-  width: 60vw;
+  width: 80vw;
   height: 30vw;
   border: solid;
   border-radius: 20px;
   overflow: auto;
+  position: relative;
 }
 
 .orderPizzas {
   border: solid;
   width: 60%;
-
   border: solid;
   border-radius: 20px;
 }
@@ -68,4 +69,10 @@
   border: solid;
   display: inline-block;
   overflow: auto;
+}
+
+.newPizza {
+  position: absolute;
+  right:0;
+  top:0;
 }
