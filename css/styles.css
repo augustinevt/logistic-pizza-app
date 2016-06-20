@@ -31,9 +31,10 @@
 
 .order {
   width: 60vw;
-  min-height: 30vw;
+  height: 30vw;
   border: solid;
   border-radius: 20px;
+  overflow: auto;
 }
 
 .orderPizzas {
@@ -63,7 +64,8 @@
   border:solid;
   border: solid;
   width: 12vw;
-  min-height: 30vw;
+  height: 30vw;
   border: solid;
   display: inline-block;
+  overflow: auto;
 }
